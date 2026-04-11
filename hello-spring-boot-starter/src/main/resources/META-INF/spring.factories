@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.pinda.config.HelloServiceAutoConfiguration,\
+com.pinda.config.MyLogAutoConfiguration
