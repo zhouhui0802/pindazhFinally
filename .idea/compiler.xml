@@ -6,8 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hello-spring-boot-starter" />
+        <module name="pd-tools-databases" />
+        <module name="pd-tools-user" />
+        <module name="pd-tools-j2cache" />
+        <module name="pd-gateway" />
+        <module name="pd-tools-xss" />
         <module name="myapp" />
+        <module name="pd-tools-core" />
+        <module name="pd-tools-validator" />
+        <module name="pd-auth-server" />
+        <module name="pd-tools-dozer" />
+        <module name="pd-tools-common" />
+        <module name="pd-tools-swagger2" />
+        <module name="pd-auth-entity" />
+        <module name="hello-spring-boot-starter" />
+        <module name="pd-tools-jwt" />
+        <module name="pd-tools-log" />
       </profile>
     </annotationProcessing>
   </component>
@@ -15,7 +29,24 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="hello-spring-boot-starter" options="-parameters" />
       <module name="myapp" options="-parameters" />
+      <module name="pd-apps" options="" />
+      <module name="pd-auth" options="" />
+      <module name="pd-auth-entity" options="-parameters" />
+      <module name="pd-auth-server" options="-parameters" />
+      <module name="pd-gateway" options="-parameters" />
       <module name="pd-parent" options="" />
+      <module name="pd-tools" options="" />
+      <module name="pd-tools-common" options="-parameters" />
+      <module name="pd-tools-core" options="-parameters" />
+      <module name="pd-tools-databases" options="-parameters" />
+      <module name="pd-tools-dozer" options="-parameters" />
+      <module name="pd-tools-j2cache" options="-parameters" />
+      <module name="pd-tools-jwt" options="-parameters" />
+      <module name="pd-tools-log" options="-parameters" />
+      <module name="pd-tools-swagger2" options="-parameters" />
+      <module name="pd-tools-user" options="-parameters" />
+      <module name="pd-tools-validator" options="-parameters" />
+      <module name="pd-tools-xss" options="-parameters" />
     </option>
   </component>
 </project>

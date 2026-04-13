@@ -4,34 +4,308 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="807739b3-a0c4-4b53-93d8-bc1f372707bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello-spring-boot-starter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello-spring-boot-starter/src/main/java/com/pinda/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello-spring-boot-starter/src/main/java/com/pinda/config/HelloProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello-spring-boot-starter/src/main/java/com/pinda/config/HelloServiceAutoConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello-spring-boot-starter/src/main/java/com/pinda/config/MyLogAutoConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello-spring-boot-starter/src/main/java/com/pinda/log/MyLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello-spring-boot-starter/src/main/java/com/pinda/log/MyLogInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello-spring-boot-starter/src/main/java/com/pinda/service/HelloService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello-spring-boot-starter/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/src/main/java/com/pinda/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/src/main/java/com/pinda/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/src/test/java/com/pinda/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/src/main/java/com/itheima/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/src/test/java/com/itheima/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pd-authority/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pindazhFinally.iml" afterDir="false" />
+    <list default="true" id="807739b3-a0c4-4b53-93d8-bc1f372707bd" name="Changes" comment="开始处理整体框架">
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/LoginParamDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/MenuSaveDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/MenuTreeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/MenuUpdateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/ResourceQueryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/ResourceSaveDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/ResourceUpdateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/RoleAuthoritySaveDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/RolePageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/RoleQueryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/RoleSaveDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/RoleUpdateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/RouterMeta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/UserPageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/UserRoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/UserRoleSaveDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/UserSaveDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/UserUpdateAvatarDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/UserUpdateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/UserUpdatePasswordDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/auth/VueRouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/core/OrgSaveDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/core/OrgTreeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/core/OrgUpdateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/core/StationPageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/core/StationSaveDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/dto/core/StationUpdateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/entity/auth/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/entity/auth/Resource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/entity/auth/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/entity/auth/RoleAuthority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/entity/auth/RoleOrg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/entity/auth/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/entity/auth/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/entity/common/LoginLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/entity/common/OptLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/entity/core/Org.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/entity/core/Station.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/enumeration/auth/AuthorizeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/enumeration/auth/Sex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/pinda/authority/enumeration/common/LogType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/AuthorityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/dao/auth/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/dao/auth/ResourceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/dao/auth/RoleAuthorityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/dao/auth/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/dao/auth/RoleOrgMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/dao/auth/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/dao/auth/UserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/dao/common/LoginLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/dao/common/OptLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/dao/core/OrgMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/dao/core/StationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/ResourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/RoleAuthorityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/RoleOrgService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/UserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/ValidateCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/impl/AuthManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/impl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/impl/ResourceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/impl/RoleAuthorityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/impl/RoleOrgServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/impl/UserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/auth/impl/ValidateCodeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/common/LoginLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/common/OptLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/common/impl/LoginLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/common/impl/OptLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/core/OrgService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/core/StationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/core/impl/OrgServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/biz/service/core/impl/StationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/config/AuthorityDatabaseAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/config/AuthorityMybatisAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/config/AuthorityWebConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/config/ExceptionConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/controller/auth/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/controller/auth/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/controller/auth/ResourceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/controller/auth/RoleAuthorityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/controller/auth/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/controller/auth/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/controller/common/DashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/controller/common/LoginLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/controller/common/OptLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/controller/core/OrgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/java/com/itheima/pinda/authority/controller/core/StationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/client/pri.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/client/pub.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/dozer/biz.dozer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/dozer/global.dozer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/j2cache/caffeine.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/base/auth/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/base/auth/ResourceMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/base/auth/RoleAuthorityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/base/auth/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/base/auth/RoleOrgMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/base/auth/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/base/auth/UserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/base/common/LoginLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/base/common/OptLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/base/core/OrgMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/base/core/StationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/ext/auth/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/ext/auth/ResourceMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/ext/auth/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/ext/auth/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/ext/common/LoginLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/mapper_authority/ext/core/StationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-server/src/main/resources/spy.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/src/main/java/com/itheima/pinda/ZuulServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/src/main/java/com/itheima/pinda/zuul/api/ResourceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/src/main/java/com/itheima/pinda/zuul/api/ResourceApiFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/src/main/java/com/itheima/pinda/zuul/config/ZuulConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/src/main/java/com/itheima/pinda/zuul/filter/AccessFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/src/main/java/com/itheima/pinda/zuul/filter/BaseFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/src/main/java/com/itheima/pinda/zuul/filter/TokenContextFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/src/main/resources/client/pri.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/src/main/resources/client/pub.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/src/main/resources/j2cache/caffeine.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-gateway/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/src/main/java/com/itheima/pinda/common/adapter/IgnoreTokenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/src/main/java/com/itheima/pinda/common/config/BaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/src/main/java/com/itheima/pinda/common/constant/CacheKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/src/main/java/com/itheima/pinda/common/converter/BaseDateConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/src/main/java/com/itheima/pinda/common/converter/EnumDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/src/main/java/com/itheima/pinda/common/converter/String2DateConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/src/main/java/com/itheima/pinda/common/converter/String2LocalDateConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/src/main/java/com/itheima/pinda/common/converter/String2LocalDateTimeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/src/main/java/com/itheima/pinda/common/converter/String2LocalTimeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/src/main/java/com/itheima/pinda/common/enums/HttpMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/src/main/java/com/itheima/pinda/common/handler/DefaultGlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-common/src/main/java/com/itheima/pinda/common/undertow/UndertowServerFactoryCustomizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/base/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/base/BaseEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/base/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/base/entity/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/base/entity/SuperEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/base/id/AbstractIdGenerate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/base/id/CodeGenerate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/base/id/IdGenerate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/base/id/SnowflakeIdGenerate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/context/BaseContextConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/context/BaseContextHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/exception/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/exception/BaseUncheckedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/exception/BizException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/exception/code/BaseExceptionCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/exception/code/ExceptionCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/model/ITreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/utils/AntiSqlFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/utils/BizAssert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/utils/MapHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/utils/NumberHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/utils/SpringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/utils/StrHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/utils/StrPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/utils/TimeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/utils/TreeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-core/src/main/java/com/itheima/pinda/utils/ValidatorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/pinda/database/datasource/BaseDatabaseConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/pinda/database/datasource/BaseMybatisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/pinda/database/datasource/MyMetaObjectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/pinda/database/mybatis/conditions/Wraps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/pinda/database/mybatis/conditions/query/LbqWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/pinda/database/mybatis/conditions/update/LbuWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/pinda/database/mybatis/typehandler/BaseLikeTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/pinda/database/mybatis/typehandler/FullLikeTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/pinda/database/mybatis/typehandler/LeftLikeTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/pinda/database/mybatis/typehandler/RightLikeTypeHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/pinda/database/parsers/TenantContextHandlerInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/pinda/database/parsers/TenantWebMvcConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-databases/src/main/java/com/itheima/pinda/database/properties/DatabaseProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-dozer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-dozer/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-dozer/src/main/java/com/itheima/pinda/dozer/DozerAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-dozer/src/main/java/com/itheima/pinda/dozer/DozerUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-dozer/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/com/itheima/pinda/j2cache/MyCacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/autoconfigure/J2CacheAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/autoconfigure/J2CacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/autoconfigure/J2CacheSpringCacheAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/autoconfigure/J2CacheSpringRedisAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/cache/support/J2CacheCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/cache/support/J2CacheCacheManger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/cache/support/redis/ConfigureNotifyKeyspaceEventsAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/cache/support/redis/SpringRedisActiveMessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/cache/support/redis/SpringRedisCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/cache/support/redis/SpringRedisGenericCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/cache/support/redis/SpringRedisMessageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/cache/support/redis/SpringRedisProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/cache/support/redis/SpringRedisPubSubPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/cache/support/util/J2CacheSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/cache/support/util/SpringJ2CacheConfigUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/java/net/oschina/j2cache/cache/support/util/SpringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-j2cache/src/main/resources/j2cache.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/java/com/itheima/pinda/auth/client/EnableAuthClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/java/com/itheima/pinda/auth/client/configuration/AuthClientConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/java/com/itheima/pinda/auth/client/properties/AuthClientProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/java/com/itheima/pinda/auth/client/utils/JwtTokenClientUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/java/com/itheima/pinda/auth/server/EnableAuthServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/java/com/itheima/pinda/auth/server/configuration/AuthServerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/java/com/itheima/pinda/auth/server/properties/AuthServerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/java/com/itheima/pinda/auth/server/utils/JwtTokenServerUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/java/com/itheima/pinda/auth/utils/JwtHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/java/com/itheima/pinda/auth/utils/JwtUserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/java/com/itheima/pinda/auth/utils/RsaKeyHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/java/com/itheima/pinda/auth/utils/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/resources/pri.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-jwt/src/main/resources/pub.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/src/main/java/com/itheima/pinda/log/LogAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/src/main/java/com/itheima/pinda/log/annotation/SysLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/src/main/java/com/itheima/pinda/log/aspect/SysLogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/src/main/java/com/itheima/pinda/log/entity/OptLogDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/src/main/java/com/itheima/pinda/log/event/SysLogEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/src/main/java/com/itheima/pinda/log/event/SysLogListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/src/main/java/com/itheima/pinda/log/init/ApplicationLoggerInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/src/main/java/com/itheima/pinda/log/logback/pinda-defaults.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/src/main/java/com/itheima/pinda/log/util/AddressUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/src/main/java/com/itheima/pinda/log/util/LogUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-log/src/main/resources/ip2region/ip2region.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-swagger2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-swagger2/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-swagger2/src/main/java/com/itheima/pinda/swagger2/Swagger2Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-swagger2/src/main/java/com/itheima/pinda/swagger2/SwaggerAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-swagger2/src/main/java/com/itheima/pinda/swagger2/SwaggerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-swagger2/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/src/main/java/com/itheima/pinda/user/annotation/EnableLoginArgResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/src/main/java/com/itheima/pinda/user/annotation/LoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/src/main/java/com/itheima/pinda/user/config/LoginArgResolverConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/src/main/java/com/itheima/pinda/user/feign/UserQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/src/main/java/com/itheima/pinda/user/feign/UserResolveApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/src/main/java/com/itheima/pinda/user/feign/fallback/UserResolveApiFallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/src/main/java/com/itheima/pinda/user/interceptor/ContextHandlerInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/src/main/java/com/itheima/pinda/user/model/SysOrg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/src/main/java/com/itheima/pinda/user/model/SysRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/src/main/java/com/itheima/pinda/user/model/SysStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/src/main/java/com/itheima/pinda/user/model/SysUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-user/src/main/java/com/itheima/pinda/user/resolver/ContextArgumentResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-validator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-validator/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-validator/src/main/java/com/itheima/pinda/validator/config/EnableFormValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-validator/src/main/java/com/itheima/pinda/validator/config/ValidatorConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-xss/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-xss/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-xss/src/main/java/com/itheima/pinda/xss/XssAuthConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-xss/src/main/java/com/itheima/pinda/xss/converter/XssStringJsonDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-xss/src/main/java/com/itheima/pinda/xss/filter/XssFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-xss/src/main/java/com/itheima/pinda/xss/utils/XssUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-xss/src/main/java/com/itheima/pinda/xss/wrapper/XssRequestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-xss/src/main/resources/AntiSamy_zh_CN.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-xss/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pd-tools-xss/src/main/resources/antisamy-slashdot-1.4.4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-tools/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-tools-j2cache.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pd-tools-log.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/src/test/java/com/pinda/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pd-authority/pd-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pd-authority/pd-parent/src/main/java/com/itheima/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/pd-authority/pd-parent/pd-apps/pd-auth/pd-auth-entity/src/main/java/com/itheima/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pd-authority/pd-parent/src/test/java/com/itheima/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +332,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -69,32 +346,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.hello-spring-boot-starter [install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.App.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.23678161&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.hello-spring-boot-starter [install].executor": "Run",
+    "Maven.pd-parent [compile].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.App.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/IDEAProject/pindazhFinally/pd-authority/pd-parent/pd-apps/pd-gateway/src/main/java/com/itheima/pinda",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.23678161",
+    "settings.editor.selected.configurable": "settings.qodana",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEAProject\pindazhFinally\pd-authority\pd-parent\pd-apps\pd-gateway\src\main\java\com\itheima\pinda" />
+      <recent name="D:\IDEAProject\pindazhFinally\pd-authority\pd-parent\pd-apps\pd-gateway\src\main\resources" />
+      <recent name="D:\IDEAProject\pindazhFinally\pd-authority\pd-parent\pd-apps\pd-gateway" />
+      <recent name="D:\IDEAProject\pindazhFinally\pd-authority\pd-parent\pd-apps\pd-auth\pd-auth-entity\src\main\java\com\itheima" />
+      <recent name="D:\IDEAProject\pindazhFinally\pd-authority\pd-parent\pd-apps\pd-auth\pd-auth-server\src\main\java\com\itheima\pinda" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.App">
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="myapp" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.pinda.App" />
@@ -104,6 +392,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthorityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="pd-auth-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itheima.pinda.AuthorityApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,12 +428,28 @@
       <workItem from="1775898644108" duration="3405000" />
       <workItem from="1775945282990" duration="1687000" />
       <workItem from="1775946985835" duration="826000" />
-      <workItem from="1775947822799" duration="3714000" />
+      <workItem from="1775947822799" duration="5085000" />
+      <workItem from="1775991173017" duration="2457000" />
+      <workItem from="1776034766357" duration="4630000" />
+      <workItem from="1776072605583" duration="4285000" />
     </task>
+    <task id="LOCAL-00001" summary="开始处理整体框架">
+      <option name="closed" value="true" />
+      <created>1775951681802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775951681802</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="开始处理整体框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="开始处理整体框架" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -146,5 +457,9 @@
         <watch expression="        Method method = handlerMethod.getMethod();//获得被拦截的方法对象&#10;" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

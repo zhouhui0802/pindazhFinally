@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/myapp.iml" filepath="$PROJECT_DIR$/myapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pd-tools-j2cache.iml" filepath="$PROJECT_DIR$/pd-tools-j2cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pd-tools-log.iml" filepath="$PROJECT_DIR$/pd-tools-log.iml" />
       <module fileurl="file://$PROJECT_DIR$/pindazhFinally.iml" filepath="$PROJECT_DIR$/pindazhFinally.iml" />
     </modules>
   </component>

@@ -8,14 +8,22 @@
         <relativePath/> <!--如果不写这行，就会找到pd-authority中，因为默认parent是pd-authority-->
     </parent>
 
+    <groupId>com.itheima</groupId>
     <artifactId>pd-parent</artifactId>
-
+    <version>1.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <description>Spring Boot 2.0项目依赖管理</description>
 
     <url>http://maven.apache.org</url>
+    <modules>
+        <module>pd-apps</module>
+        <module>pd-tools</module>
+        <module>pd-tools/pd-tools-validator</module>
+        <module>pd-tools/pd-tools-xss</module>
+    </modules>
+
 
     <!-- 环境 -->
     <profiles>
